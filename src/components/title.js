@@ -1,5 +1,16 @@
 import React from 'react';
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
+import {
+    MDBCarousel,
+    MDBCarouselCaption,
+    MDBCarouselInner,
+    MDBCarouselItem,
+    MDBView,
+    MDBMask,
+    MDBContainer,
+    MDBRow, MDBBtnGroup, MDBBtn
+} from "mdbreact";
+import ReactDOM from "react-dom";
+import {Location} from "./location";
 export class Title extends React.Component {
     render() {
         return (
@@ -58,9 +69,20 @@ export class Title extends React.Component {
         </MDBCarouselItem>
         </MDBCarouselInner>
     </MDBCarousel>
+                <MDBRow center>
+                    <div className="btn-toolbar" aria-label="Toolbar with button groups">
+                        <MDBBtnGroup className="mr-2">
+                            <MDBBtn onClick={Title.locateMe} href="#locate-me">Locate Me!</MDBBtn>
+                        </MDBBtnGroup>
+                    </div>
+                </MDBRow>
 
     <hr/>
             </MDBContainer>
         );
+    }
+
+    static locateMe() {
+        ReactDOM.render(<Location />, document.getElementById('locate-me'));
     }
 }

@@ -7,6 +7,8 @@ import {Pubs} from "./pubs";
 import {Journeys} from "./journeys";
 import {Traditions} from "./traditions";
 import {Hotels} from "./hotels";
+import {Location} from "./location";
+import {Footer} from "./footer";
 
 export class Menu extends React.Component {
 
@@ -39,6 +41,12 @@ export class Menu extends React.Component {
             </div>
         );
     }
+
+    componentDidMount() {
+        ReactDOM.render(<Footer />, document.getElementById('footer-app'));
+    }
+
+
 
     renderRestaurant() {
         ReactDOM.render(<Restaurants />, document.getElementById('content-to-fill'));
