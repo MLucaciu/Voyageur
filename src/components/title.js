@@ -28,7 +28,7 @@ export class Title extends React.Component {
             <MDBView>
             <img
         className="d-block w-100"
-        src="http://onebigphoto.com/uploads/2013/09/lovely-innsbruck-austria.jpg"
+        src="/images/insbruck.png"
         alt="first slide"
             />
             </MDBView>
@@ -37,7 +37,7 @@ export class Title extends React.Component {
             <MDBView>
                 <img
                     className="d-block w-100"
-                    src="http://onebigphoto.com/uploads/2015/03/winter-in-salzburg-austria.jpg"
+                    src="/images/salzburg.png"
                     alt="Wien"
                 />
             </MDBView>
@@ -49,7 +49,7 @@ export class Title extends React.Component {
             <MDBView>
             <img
         className="d-block w-100"
-        src="http://onebigphoto.com/uploads/2014/03/amazing-hallstatt-village-austria.jpg"
+        src="/images/halstatt.png"
         alt="Third slide"
             />
             <MDBMask overlay="black-slight" />
@@ -62,7 +62,7 @@ export class Title extends React.Component {
             <MDBView>
                 <img
                     className="d-block w-100"
-                    src="http://onebigphoto.com/uploads/2013/01/a-day-outside-tyrol-austria.jpg"
+                    src="/images/tyrol.png"
                     alt="Innsbruck"
                 />
             </MDBView>
