@@ -10,6 +10,22 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 
+const CACHE_NAME = 'static-cache-v2';
+const DATA_CACHE_NAME = 'data-cache-v1';
+// CODELAB: Add list of files to cache here.
+const FILES_TO_CACHE = [
+  '/',
+  '/index.html',
+  '/images/burger.png',
+  '/images/capri.png',
+  '/images/wok.png',
+  '/images/front.png',
+  '/images/suzane.png',
+  '/images/uni.png',
+  '/images/lookbar.png',
+  '/images/kitsch.png'
+];
+
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
