@@ -30,8 +30,8 @@ export class Restaurants extends React.Component {
                         <MDBMedia left top href="#">
                             <MDBMedia
                                 object
-                                src="https://placehold.it/64x64"
-                                alt="Generic placeholder image"
+                                src="/images/burger.png"
+                                alt="Burgerei Linz"
                             />
                         </MDBMedia>
                         <MDBMedia body>
@@ -45,8 +45,8 @@ export class Restaurants extends React.Component {
                         <MDBMedia left top href="#">
                             <MDBMedia
                                 object
-                                src="https://placehold.it/64x64"
-                                alt="Generic placeholder image"
+                                src="/images/front.png"
+                                alt="Front Food"
                             />
                         </MDBMedia>
                         <MDBMedia body>
@@ -60,8 +60,8 @@ export class Restaurants extends React.Component {
                         <MDBMedia left top href="#">
                             <MDBMedia
                                 object
-                                src="https://placehold.it/64x64"
-                                alt="Generic placeholder image"
+                                src="/images/wok.png"
+                                alt="Wokman"
                             />
                         </MDBMedia>
                         <MDBMedia body>
