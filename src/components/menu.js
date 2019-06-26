@@ -37,7 +37,6 @@ export class Menu extends React.Component {
                         </MDBRow>
                     </MDBContainer>
                 </MDBContainer>
-                {/*<AddToHomescreen onAddToHomescreenClick={this.handleAddToHomescreenClick} />*/}
             </div>
         );
     }

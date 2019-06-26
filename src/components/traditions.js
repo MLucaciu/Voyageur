@@ -1,11 +1,33 @@
 import React from 'react';
-import {MDBContainer, MDBCardGroup, MDBCardImage, MDBCardTitle, MDBCardText, MDBCardBody, MDBCard, MDBBtn} from "mdbreact";
+import {
+    MDBContainer,
+    MDBCardGroup,
+    MDBCardImage,
+    MDBCardTitle,
+    MDBCardText,
+    MDBCardBody,
+    MDBCard,
+    MDBBtn,
+    MDBRow, MDBBtnGroup
+} from "mdbreact";
+import {CameraComponent} from "./camera";
+import ReactDOM from "react-dom";
+import {Footer} from "./footer";
 
 export class Traditions extends React.Component {
 
     render() {
         return (
             <MDBContainer>
+                <MDBContainer className="pb-5">
+                    <MDBRow center>
+                        <div className="btn-toolbar justify-content-sm-center blue-gradient" role="toolbar" aria-label="Toolbar with button groups">
+                            <MDBBtnGroup className="mr-2">
+                                <MDBBtn className="blue-gradient" onClick={this.takePhoto}>Take Photo</MDBBtn>
+                            </MDBBtnGroup>
+                        </div>
+                    </MDBRow>
+                </MDBContainer>
                 <MDBCardGroup>
                     <MDBCard>
                         <MDBCardImage
@@ -133,8 +155,8 @@ export class Traditions extends React.Component {
         );
     }
 
-    hide() {
-
+    takePhoto() {
+        ReactDOM.render(<CameraComponent />, document.getElementById('camera'));
     }
 
 }
