@@ -19,10 +19,7 @@ export class Footer extends React.Component {
                                 <h5 className="title">Authors</h5>
                                 <ul>
                                     <li className="list-unstyled">
-                                        <a href="#!">Lucaciu Mircea-Tiberiu</a>
-                                    </li>
-                                    <li className="list-unstyled">
-                                        <a href="#!">Preda Anamaria-Roberta</a>
+                                        <a href="https://github.com/MLucaciu">Lucaciu Mircea-Tiberiu</a>
                                     </li>
                                 </ul>
                             </MDBCol>
